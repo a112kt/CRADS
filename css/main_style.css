@@ -1,0 +1,25 @@
+
+#btn1{
+    border: 1px solid sandybrown;
+    background-color:transparent;
+   
+}
+#btn2{
+    border: 1px solid rgb(126, 161, 189);
+}
+h1{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+   
+}
+
+.container{
+    background-color: rgb(255, 240, 222);
+    border: 1px solid aqua;
+    border-radius: 30px;
+    box-shadow: 20px black;
+}
+input{
+    border: 1px solid  aqua;
+}

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main_style.css">
+    </head>
+    <body>
+      <div class="container mt-5">
+       <div class="p-3 ">
+        <h1 class="px-4 mt-4">Products :</h1>
+        <div class="w-100 d-flex flex-column px-4 py-2">
+         <label class="mt-2">Product Name :</label>
+         <input type="text" class="mt-2 border-1 rounded-3 p-2 " id="ProductName" placeholder="Samsoung">
+         <div class="alert alert-danger mt-2 d-none" id="nameValidation">
+             <ul>
+                 <li>Name must be start with Capital Char</li>
+                 <li>Name can't be less than 3</li>
+                 <li>Name can't be more than 20</li>
+             </ul>
+         </div>
+     </div>
+     <div class="w-100 d-flex flex-column  px-4 py-2">
+         <label class="mt-2">Product Price :</label>
+         <input type="number" class="mt-2 rounded-3 p-2" id="ProductPrice" placeholder="ex:30000">
+         <div class="alert alert-danger mt-2 d-none"  id="priceValidation">
+             <P class="mb-0">Product Price must be more than 1</P>
+         </div>
+     </div>
+     <div class="w-100 d-flex flex-column  px-4 py-2">
+         <label class="mt-2">Product Category :</label>
+         <input type="text" class="mt-2  rounded-3 p-2" id="ProductCategory" placeholder="phone">
+         <div class="alert alert-danger mt-2 d-none" id="cateValidation">
+             <P class="mb-0">Product Category must be start with Capital Char</P>
+         </div>
+     </div>
+     <div class="w-100 d-flex flex-column  px-4 py-2">
+         <label class="mt-2">Product Descraption:</label>
+         <input type="text" class="mt-2  rounded-3 p-2" id="ProductDes" placeholder="good">
+         <div class="alert alert-danger mt-2 d-none"  id="descValidation">
+             <P class="mb-0">Product Category must be start with Capital Char</P>
+         </div>
+     </div>
+     <button class="btn mx-4 mt-4 bg-info text-white fs-5" id="addUpdateBtn" onclick=" addProduct()">Add Product</button>
+ 
+ 
+     <div class="mt-5 p-4 text-center">
+         <input type="text" class="w-50 mb-4 p-2  rounded-2" id="inputSearch" onkeyup="search()" placeholder="search">
+         <table class="table">
+             <thead>
+                 <td>index</td>
+                 <td>Product Name</td>
+                 <td>Product Price</td>
+                 <td>Product Category</td>
+                 <td>Product Desc</td>
+                 <td class="text-danger">Delete</td>
+                 <td class="text-info">Update</td>
+             </thead>
+             <tbody id="tbody">
+                
+             </tbody>
+         </table>
+     </div>
+       </div>
+      </div>
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/code.js"></script>
+    </body>
+</html>
